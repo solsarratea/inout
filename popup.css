@@ -1,0 +1,43 @@
+html,label {
+    background: #0f0f0f;
+    color: white;
+ 
+}
+input {
+    font-family: "Lucida Console", monospace;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div{
+    margin-bottom: 1em;
+    font-family: "Lucida Console", monospace;
+    font-size: 14px;
+}
+
+.rainbow-button {
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.rainbow-button:after {
+    content:attr(alt);
+}
+
+.rainbow-button:hover {
+    animation:slidebg 3s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position:90vw;
+    }
+}
